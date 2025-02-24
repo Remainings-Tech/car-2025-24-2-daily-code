@@ -66,13 +66,13 @@ int main() {
     myThirdCar.displayDetails();
 
     // Creating objects of Bike
-    Bike myBike("Red", "Mountain", "M", "Trek");
+    Bike myBike("Brown", "Mountain", "M", "Trek");
    
     // Creating second objects of Bike
-    Bike mySecondBike("Blue", "Racing", "L", "Specialized");
+    Bike mySecondBike("Orange", "Racing", "L", "Specialized");
    
     // Creating Third objects of Bike
-    Bike myThirdBike("Black", "Hybrid", "S", "Giant");
+    Bike myThirdBike("Yellow", "Hybrid", "S", "Giant");
 
     // Display details of bikes
     myBike.displayDetails();
