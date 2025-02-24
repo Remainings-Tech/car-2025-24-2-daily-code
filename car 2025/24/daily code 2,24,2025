@@ -1,0 +1,83 @@
+#include <iostream>
+using namespace std;
+
+// The Car class definition
+class Car {
+public:
+    // Attributes (variables) of a car
+    string color;
+    int year;
+    string make;
+
+    // Constructor to initialize the Car object
+    Car(string c, int y, string m) {
+        color = c;
+        year = y;
+        make = m;
+    }
+
+    // Function to display the details of the car
+    void displayDetails() {
+        cout << "Car details: " << endl;
+        cout << "Color: " << color << endl;
+        cout << "Year: " << year << endl;
+        cout << "Make: " << make << endl << endl;
+    }
+};
+
+// The Bike class definition
+class Bike {
+public:
+   
+    string color;
+    string type;   
+    string frameSize;  
+    string make;
+
+    Bike(string c, string t, string f, string m) {
+        color = c;  
+        type = t;   
+        frameSize = f;  
+        make = m;  
+    }
+
+    void displayDetails() {
+        cout << "Bike details: " << endl;
+        cout << "Color: " << color << endl;
+        cout << "Type: " << type << endl;
+        cout << "Frame Size: " << frameSize << endl;
+        cout << "Make: " << make << endl << endl;
+    }
+};
+
+int main() {
+    // Creating an object of Car
+    Car myCar("Red", 2021, "Toyota");
+    
+    // Creating another object of Car
+    Car mySecondCar("Blue", 2019, "Ford");
+    
+    // Creating Third object of Car
+    Car myThirdCar("White", 2015, "Audi");
+
+    // Display details of cars
+    myCar.displayDetails();
+    mySecondCar.displayDetails();
+    myThirdCar.displayDetails();
+
+    // Creating objects of Bike
+    Bike myBike("Red", "Mountain", "M", "Trek");
+   
+    // Creating second objects of Bike
+    Bike mySecondBike("Blue", "Racing", "L", "Specialized");
+   
+    // Creating Third objects of Bike
+    Bike myThirdBike("Black", "Hybrid", "S", "Giant");
+
+    // Display details of bikes
+    myBike.displayDetails();
+    mySecondBike.displayDetails();
+    myThirdBike.displayDetails();
+
+    return 0;
+}
